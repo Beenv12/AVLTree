@@ -7,11 +7,8 @@ namespace AVLTree
         Node* right;
     };
 
-    class TREE
-    { 
-    public:
-    
-        bool CorrectFunction(std::vector<int> a)
+       
+        bool TREE::CorrectFunction(std::vector<int> a)
         {
             std::set<int> b;
             for (int i=0; i<a.size();++i)
@@ -19,7 +16,7 @@ namespace AVLTree
             return (b.size()==a.size());
         }
 
-        int ChosenFunction ()
+        int TREE::ChosenFunction ()
         {
             int chosenValue;
             std::cout<<"Выберите одну из операций:"<<std::endl;
@@ -34,6 +31,4 @@ namespace AVLTree
             std::cin >> chosenValue;
             return chosenValue;
         }
-    };
 }
-

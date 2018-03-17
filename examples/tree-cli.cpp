@@ -1,9 +1,12 @@
-include <tree.hpp>
-include <vector>
-include <iostream>
+#include <tree.hpp>
+#include <vector>
+#include <iostream>
+
+using namespace AVLTree;
+
 int main(int argc, char* argv[])
 { 
-    AVLTree::TREE obj;    
+    TREE obj;    
     std::vector<int> a;
     int chosenValue ;
 
@@ -17,3 +20,4 @@ int main(int argc, char* argv[])
         chosenValue=8;
     }
 }
+
