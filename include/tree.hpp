@@ -1,14 +1,39 @@
 #include <iostream>
 #include <vector>
 #include <set>
-
+#include <string>
+#include <ostream> 
 namespace AVLTree 
 {
-    class TREE
-    { 
-    public:
+	class TUI
+    	{ 
+    	public:
     
-        bool CorrectFunction(std::vector<int> a);
-        int ChosenFunction ();
-    };
+        	bool CorrectFunction(std::vector<int> a);
+        	int ChosenFunction ();
+    	};
+	
+	
+	enum class traversal_order {pre, in, post};
+  	class Tree
+	{
+  	public:
+    		Tree();
+   	//	Tree(std::initializer_list<int> list);
+    	//	Tree(const Tree& tree);
+    	//	Tree(Tree&& tree);
+    	//	bool insert(int value);
+    	//	bool exists(int value);
+    	//	bool remove(int value);
+    	//	bool save(const string& path);
+    	//	bool load(const string& path);
+    	//	void print(traversal_order order);
+    	//	auto friend operator<<(ostream& stream, const Tree&) -> ostream& stream;
+    	//	auto operator=(const Tree&) -> Tree&;
+    	//	auto operator=(Tree&&) -> Tree&;
+    	//	~Tree();
+  	private:
+//    		Node* root;
+  	};
 }
+

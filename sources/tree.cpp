@@ -9,7 +9,7 @@ namespace AVLTree
 	};
 
        
-        bool TREE::CorrectFunction(std::vector<int> a)
+        bool TUI::CorrectFunction(std::vector<int> a)
         {
             	std::set<int> b;
             	for (int i=0; i<a.size();++i)
@@ -17,7 +17,7 @@ namespace AVLTree
             	return (b.size()==a.size());
         }
 
-        int TREE::ChosenFunction ()
+        int TUI::ChosenFunction ()
         {
             	int chosenValue;
             	std::cout<<"Выберите одну из операций:"<<std::endl;
