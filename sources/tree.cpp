@@ -9,12 +9,14 @@ namespace AVLTree
 	};
 
        
-        bool TUI::CorrectFunction(std::vector<int> a)
+        std::vector<int> TUI::CorrectFunction(std::vector<int> a)
         {
             	std::set<int> b;
             	for (int i=0; i<a.size();++i)
-            	b.insert(a[i]);
-            	return (b.size()==a.size());
+            		b.insert(a[i]);
+		a.clear();
+                std::for_each(b.begin(),b.end(), [&a](int const& val){a.push_back(val);});
+            	return a;
         }
 
         int TUI::ChosenFunction ()

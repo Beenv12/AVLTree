@@ -1,24 +1,24 @@
 #include <iostream>
 #include <vector>
 #include <set>
-#include <string>
-#include <ostream> 
+#include <algorithm>
+
 namespace AVLTree 
 {
 	class TUI
     	{ 
     	public:
     
-        	bool CorrectFunction(std::vector<int> a);
+        	std::vector<int> CorrectFunction(std::vector<int> a);
         	int ChosenFunction ();
     	};
 	
 	
-	enum class traversal_order {pre, in, post};
+	//enum class traversal_order {pre, in, post};
   	class Tree
 	{
   	public:
-    		Tree();
+    	//	Tree();
    	//	Tree(std::initializer_list<int> list);
     	//	Tree(const Tree& tree);
     	//	Tree(Tree&& tree);
